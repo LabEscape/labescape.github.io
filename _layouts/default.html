@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <header id="hero">
+      <div class="overlay"></div>
+      <div class="content">
+        <img id="graphic" src="{{ '/assets/images/graphic.png' | relative_url }}" alt="Lab Escape Graphic" class="hero-graphic"/>
+      </div>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+    <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+  </body>
+</html>
