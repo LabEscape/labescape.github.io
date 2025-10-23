@@ -1,19 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-  {% include head.html %}
-  <body>
-    <header id="hero">
-      <div class="overlay"></div>
-      <div class="content">
-        <img id="graphic" src="{{ '/assets/images/graphic.png' | relative_url }}" alt="Lab Escape Graphic" class="hero-graphic"/>
-      </div>
-    </header>
+<!doctype html>
+<html lang="{{ page.lang | downcase }}">
+    {% include head.html %}
+    <body>
+        {% if page.lang == "CS" %}
+        <a href="/en"><button id="lang-toggle">EN</button></a>
+        {% elsif page.lang == "EN" %}
+        <a href="/cs"><button id="lang-toggle">CS</button></a>
+        {% endif %}
 
-    <main>
-      {{ content }}
-    </main>
+        <header id="hero">
+            <div class="hero-background"></div>
+            <div class="content fade-in">
+                <img
+                    id="graphic"
+                    src="{{ '/assets/images/graphic_text.png' | relative_url }}"
+                    alt="Lab Escape Graphic"
+                    class="hero-graphic"
+                />
+            </div>
+        </header>
 
-    {% include footer.html %}
-    <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
-  </body>
+        <main>{{ content }}</main>
+
+        {% include footer.html %}
+        <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+    </body>
 </html>
