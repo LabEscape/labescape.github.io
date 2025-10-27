@@ -2,15 +2,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <meta
+        name="google-site-verification"
+        content="m46K5QcWJbDNCzo-DP0VGs5guu3zW4TbTde2CBvMKyA"
+    />
+
     <link
         rel="stylesheet"
         href="{{ '/assets/css/style.css' | relative_url }}"
     />
     <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" />
 
-    {% if page.lang == "CS" %}
-        {% include seo_cs.html %}
-    {% elsif page.lang == "EN" %}
-        {% include seo_en.html %}
-    {% endif %}
+    {% if page.lang == "CS" %} {% include seo_cs.html %} {% elsif page.lang ==
+    "EN" %} {% include seo_en.html %} {% endif %}
 </head>
