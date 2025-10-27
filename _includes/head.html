@@ -1,10 +1,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lab Escape - The Escape room</title>
+
     <link
         rel="stylesheet"
         href="{{ '/assets/css/style.css' | relative_url }}"
     />
-    <link rel="icon" href="{{ '/favicon.png' | relative_url }}" />
+    <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" />
+
+    {% if page.lang == "CS" %}
+        {% include seo_cs.html %}
+    {% elsif page.lang == "EN" %}
+        {% include seo_en.html %}
+    {% endif %}
 </head>
