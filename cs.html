@@ -4,36 +4,48 @@ lang: CS
 ---
 
 <section id="about" class="fade-in">
-    <h2>About</h2>
+    <h2>Úvod</h2>
 
     <p>
-        As one of the scientific teams of the ESC corporation, you are tasked
-        with studying a newly discovered anomaly. But even a routine experiment
-        can go wrong — and now you're trapped inside the lab.
+        Jakožto jeden z vědeckých týmů společnosti ESC máte na starost zkoumání
+        nově objevené anomálie. Avšak i rutinní experiment se může zvrtnout - a
+        vy se náhle ocitáte v uzamčené laboratoři.
+    </p>
+    <p>
+        V laboratoři, kterou pro vás připravili studenti ČVUT FIT, se něco
+        pokazilo. Vaším úkolem je odhalit příčinu a napravit ji dřív, než bude
+        pozdě — jedině tak se dostanete ven.
+    </p>
+    <p>
+        Místnost se nachází v Dejvickém kampusu ČVUT na adrese Thákurova 9.
+        Přímo před Fakultou Informačních technologií.
+    </p>
+    <p>
+        Místnost je určena pro tým 2 až 4 hráčů a očekávaná herní doba je okolo
+        30 minut. Individuální návštěva je však také možná.
     </p>
 </section>
 
 <section id="pricing" class="fade-in">
-    <h2>Pricing</h2>
+    <h2>Cena</h2>
 
-    <p>Basic entry: 990 Kč / team</p>
+    <h3>500 Kč / tým</h3>
 </section>
 
 <section id="reservation" class="fade-in">
-    <h2>Reservation</h2>
+    <h2>Rezervace</h2>
 
-    <iframe
-        rel="preload"
-        src="https://koalendar.com/e/lab-escape?embed=true"
-        frameborder="0"
-    ></iframe>
+    <p>
+        Před návštěvou je nutné vytvořit si online rezervaci. Vyberte si jeden z
+        nabízených časových slotů a po dokončení rezervace obdržíte potvrzovací
+        email.
+    </p>
+
+    {% include reservation.html %}
 </section>
 
 <section id="gallery" class="fade-in">
-    <h2>Gallery</h2>
+    <h2>Galerie</h2>
 
-    <div class="gallery">
-        <img src="/assets/images/lab1.jpg" alt="Lab photo" />
-        <img src="/assets/images/lab2.jpg" alt="Lab photo" />
-    </div>
+    {% include gallery.html %}
 </section>

@@ -7,33 +7,45 @@ lang: EN
     <h2>About</h2>
 
     <p>
-        As one of the scientific teams of the ESC corporation, you are tasked
-        with studying a newly discovered anomaly. But even a routine experiment
-        can go wrong — and now you're trapped inside the lab.
+        As one of ESC's research teams you have been assigned to study a newly
+        discovered anomaly. But even a routine experiment can go wrong - and now
+        you find yourself trapped inside the lab.
+    </p>
+    <p>
+        In the laboratory prepared by students of CTU FIT, something has gone
+        wrong. Your task is to uncover the cause and fix it before it’s too late
+        — only then will you find your way out.
+    </p>
+    <p>
+        The room is located in the CTU Dejvice campus at Thákurova 9, right in
+        front of the Faculty of Information Technology.
+    </p>
+    <p>
+        The room is designed for a team of 2 to 4 players and the expected play
+        time is around 30 minutes. However an individual visit is also possible.
     </p>
 </section>
 
 <section id="pricing" class="fade-in">
     <h2>Pricing</h2>
 
-    <p>Basic entry: 990 Kč / team</p>
+    <h3>500 Kč / team</h3>
 </section>
 
 <section id="reservation" class="fade-in">
     <h2>Reservation</h2>
 
-    <iframe
-        rel="preload"
-        src="https://koalendar.com/e/lab-escape?embed=true"
-        frameborder="0"
-    ></iframe>
+    <p>
+        An online reservation is mandatory before your visit. Choose one of the
+        available time slots and you will receive a confirmation email after the
+        reservation is finished.
+    </p>
+
+    {% include reservation.html %}
 </section>
 
 <section id="gallery" class="fade-in">
     <h2>Gallery</h2>
 
-    <div class="gallery">
-        <img src="/assets/images/lab1.jpg" alt="Lab photo" />
-        <img src="/assets/images/lab2.jpg" alt="Lab photo" />
-    </div>
+    {% include gallery.html %}
 </section>
